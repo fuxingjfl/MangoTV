@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/title_layout"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/persimmon">
+
+        <RadioGroup
+            android:id="@+id/rg_content"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_pdsszs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/tab_selector_left"
+                android:text="频道收视走势"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:checked="true"
+                android:textColor="@drawable/tab_selector_text"
+                android:textSize="@dimen/text_size28px"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_lrlc_hh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/tab_selector_zj"
+                android:text="流入流出"
+                android:textColor="@drawable/tab_selector_text"
+                android:textSize="@dimen/text_size28px"/>
+
+            <RadioButton
+                android:id="@+id/rb_pdzx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/tab_selector_right"
+                android:text="频道用户在线走势"
+                android:textColor="@drawable/tab_selector_text"
+                android:textSize="@dimen/text_size28px"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_history_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+</LinearLayout>

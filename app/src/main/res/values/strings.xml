@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MangoTV</string>
+    <string-array name="right_title_name">
+        <item>节目名称</item>
+        <item>涨幅</item>
+        <item>成交量</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>买一</item>
+        <item>卖一</item>
+        <item>量比</item>
+    </string-array>
+    <string name="hint">滑动解锁</string>
+    <string name="loading">加载中...</string>
+    <string name="login">登陆</string>
+    <string name="support_zh">上海星红安数据科技有限公司技术支持</string>
+    <string name="forget_password_click_here">忘记密码? 点击这里</string>
+</resources>

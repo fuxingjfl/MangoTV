@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_sg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/bg_hs"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_tiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08-10 08-13"
+                android:textSize="@dimen/text_size26px"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/xia" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dq"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_dq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地区"
+                android:textSize="@dimen/text_size26px"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/iv_dq"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/xia" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="频道对比"
+                android:textSize="@dimen/text_size26px"
+                android:textColor="@color/persimmon"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/xia" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 顶部导航栏 -->
+    <LinearLayout
+        android:id="@+id/ll_content_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <!--<TextView
+            android:id="@+id/tv_snpd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="省内频道"
+            android:textColor="@color/persimmon"
+            android:textSize="@dimen/text_size24px" />
+
+        <TextView
+            android:id="@+id/tv_yspd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="央视频道"
+            android:textColor="@color/text_hui"
+            android:textSize="@dimen/text_size24px" />
+
+        <TextView
+            android:id="@+id/tv_wspd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="卫视频道"
+            android:textColor="@color/text_hui"
+            android:textSize="@dimen/text_size24px" />
+        <TextView
+            android:id="@+id/tv_lb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="轮播"
+            android:textColor="@color/text_hui"
+            android:textSize="@dimen/text_size24px" />
+        <TextView
+            android:id="@+id/tv_ff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="付费"
+            android:textColor="@color/text_hui"
+            android:textSize="@dimen/text_size24px" />
+        <TextView
+            android:id="@+id/tv_qtpd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="其他频道"
+            android:textColor="@color/text_hui"
+            android:textSize="@dimen/text_size24px" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <!--<View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:background="@color/persimmon"/>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:background="@color/persimmon"/>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:background="@color/persimmon"/>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:background="@color/persimmon"/>
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:background="@color/persimmon"/>
+        <View
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:background="@color/persimmon"/>-->
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pdlx"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="200dp"></android.support.v7.widget.RecyclerView>
+
+
+    <include layout="@layout/qr_qx_layout"></include>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:chuck="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/bg_hs"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_bt"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/persimmon"></RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                      <TextView
+                        android:id="@+id/tv_tiem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08-10 08-13"
+                        android:textSize="@dimen/text_size26px"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/iv_time"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/xia" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dq"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_dq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地区"
+                        android:textSize="@dimen/text_size26px"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dq"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/xia" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_pddb"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_pddb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="频道对比"
+                        android:textSize="@dimen/text_size26px"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/iv_pddb"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/xia" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <WebView
+                            android:id="@+id/wv_qxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="none"
+                            android:scrollbarSize="0dip"
+                            android:layout_margin="10dp"
+                            ></WebView>
+                        <!--<com.xha.mangotv.view.LineChartView
+                            android:id="@+id/line_chart_view"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="300dp"/>
+                        <com.xha.mangotv.view.CustomSlideToUnlockView
+                            android:id="@+id/slide_to_unlock"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            chuck:viewBackgroundResId="@drawable/shape_round_normal_green"
+                            chuck:slideImageViewWidth="@dimen/slide_width"
+                            chuck:slideImageViewResIdAfter="@mipmap/ic_launcher"
+                            chuck:slideThreshold="0.5"
+                            chuck:textSize_fh="6"
+                            chuck:textColorResId="@color/white"
+                        </com.xha.mangotv.view.CustomSlideToUnlockView>-->
+                        <!--
+                            chuck:slideImageViewResId="@drawable/icon_slide"
+-->
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

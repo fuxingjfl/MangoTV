@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text_orage">#ff8e4a</color>
+    <color name="name_color">#5cb3eb</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="textcolcr">#666666</color>
+    <color name="font_black_5">#66bdbdbd</color>
+    <color name="font_xian">#33bdbdbd</color>
+    <color name="back_bei">#edecea</color>
+    <color name="black_san">#33333333</color>
+    <color name="back_color">#d7d7d7</color>
+    <color name="qing">#68978d</color>
+    <color name="reds">#e11c08</color>
+    <color name="black_9">#999999</color>
+    <color name="orage_back">#f25b10</color>
+    <color name="color_hui">#e7e7e7</color>
+    <color name="banance_black">#772e2e2e</color>
+    <color name="xu_white">#99fefefe</color>
+    <color name="beizhu">#f5f5f5</color>
+    <color name="bg_color">#333333</color>
+    <color name="inforshang">#f25b10</color>
+    <color name="tab_text_normal_color">#cccccc</color>
+    <color name="xian">#737373</color>
+    <color name="huise">#f5f5f5</color>
+    <color name="main_hui">#e6e6e6</color>
+    <color name="zc_button">#268AFF</color>
+
+    <color name="czje_button">#D0021B</color>
+    <color name="czje_text_color">#4A4A4A</color>
+    <color name="red">#f55a0b</color>
+
+    <color name="red_xian">#946f5c</color>
+    <color name="color_xu">#897c7e83</color>
+    <color name="gr_xian">#9B9B9B</color>
+
+    <color name="js">#FFF05D14</color>
+
+    <color name="gr_text_blue">#27ADFF</color>
+    <color name="rb_blue">#0076FF</color>
+    <color name="inforxia">#4a4945</color>
+
+    <color name="text_hui">#999999</color>
+    <color name="text_red">#ff0000</color>
+    <color name="bg_grzx">#242424</color>
+    <color name="orange">#F5A623</color>
+    <color name="guancolor">#FFFA912B</color>
+    <color name="grzx_xian">#F0F0F0</color>
+
+    <color name="height_color">#45AFFF</color>
+    <color name="green">#00BF3B</color>
+    <color name="transparent_background">#50000000</color>
+
+    <color name="red_packge_xian">#979797</color>
+    <color name="xyjf">#44C12F</color>
+    <color name="tv_xyjf">#2AD35E</color>
+    <color name="tui_xu">#88000000</color>
+
+    <color name="zong_rl">#D3E7F4</color>
+    <color name="bei_color">#e5e5e5</color>
+    <color name="zp_color">#D8D8D8</color>
+    <color name="violet">#9013FE</color>
+    <color name="zhon_hui">#DCDCDC</color>
+
+    <color name="persimmon">#F54F05</color>
+    <color name="dl">#FFF34D05</color>
+    <color name="colorHint">#546E7A</color>
+    <color name="hs">#FFE3E3E3</color>
+    <color name="xh">#FFE9E9E9</color>
+    <color name="xxh">#FFF7F7F7</color>
+    <color name="pd_hs">#FFF4F4F4</color>
+    <color name="xiaohong">#FFFECFB1</color>
+    <color name="qx">#FFA2A2A2</color>
+    <color name="bq_color">#FF676767</color>
+    <color name="time_hui">#FFF8F8F8</color>
+    <color name="xian_view">#FF717171</color>
+    <color name="xz_tab">#FFFFEEE6</color>
+    <color name="xq_hs">#FFF1F1F1</color>
+    <color name="bg_hs">#FFF0F0F0</color>
+    <color name="transparent">#00000000</color>
+    <color name="silver_sand">#BABBBC</color>
+
+
+</resources>

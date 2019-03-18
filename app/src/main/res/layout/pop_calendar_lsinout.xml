@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/bg_hs"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_rl_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-10-11 15:43"
+                android:textSize="@dimen/text_size26px"
+                android:textColor="@color/persimmon"/>
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/xia_xz" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/time_hui"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/single_day"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单日"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size24px"/>
+
+
+            <View
+                android:id="@+id/single_day_view"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/xian_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_duan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期段"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size24px"/>
+
+
+            <View
+                android:id="@+id/day_duan_view"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:visibility="invisible"
+                android:background="@color/xian_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_duan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间段"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size24px"/>
+
+
+            <View
+                android:id="@+id/time_duan_view"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:visibility="invisible"
+                android:background="@color/xian_view"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<FrameLayout
+        android:id="@+id/fl_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>-->
+
+
+
+
+        <com.dsw.calendar.views.GridCalendarView
+            android:id="@+id/gridMonthView"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="wrap_content">
+        </com.dsw.calendar.views.GridCalendarView>
+
+    <GridView
+        android:id="@+id/gv_sjd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:numColumns="2"
+        android:dividerHeight="0dp"
+        android:visibility="gone"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"></GridView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black_san"/>
+
+    <include layout="@layout/qr_qx_layout"></include>
+
+
+</LinearLayout>

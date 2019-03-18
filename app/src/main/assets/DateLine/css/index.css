@@ -1,0 +1,219 @@
+@font-face {
+    font-family: dabiaosong;
+    src: url('./../font/方正大标宋_GBK.ttf')
+}
+
+.epg {
+    width: 100%;
+    position: fixed;
+    top: 40%;
+    height: 317px;
+    background-image: url('./../img/epgbg.png');
+    background-position: center;
+}
+
+.epg-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.data {
+    margin-left: 60px;
+    vertical-align: middle;
+}
+
+.epg-text {
+    margin: 0 41px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.epg-text p {
+    font-size: 37px;
+    color: white;
+    font-family: dabiaosong;
+}
+
+.erweima {
+    position: absolute;
+    top: -42px;
+}
+
+.epg-close {
+    float: right;
+}
+
+.epg-close:hover {
+    cursor: pointer;
+}
+
+.dvb {
+    width: 350px;
+    height: 230px;
+    background-image: url('./../img/dvb.png');
+    overflow: hidden;
+    position: fixed;
+    right: 0px;
+    top: 10%;
+}
+
+.dvb-data {
+    width: 265px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 3px;
+}
+
+.dvb-head {
+    background: #6072f7;
+    overflow: hidden;
+    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.dvb-head span {
+    float: left;
+    font-size: 12px;
+    box-sizing: border-box;
+    -webkit-transform: scale(0.9);
+    color: white;
+    font-family: "microsoft yahei", simhei;
+    line-height: 18px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #8f9bf9
+}
+
+.dvb-head span:nth-child(1) {
+    width: 64px;
+}
+
+.dvb-head span:nth-child(2) {
+    width: 50px;
+}
+
+.dvb-head span:nth-child(3) {
+    width: 49px;
+}
+
+.dvb-head span:nth-child(4) {
+    width: 55px;
+}
+
+.dvb-head span:nth-child(5) {
+    width: 47px;
+    border: none;
+}
+
+.dvb-ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dvb-ul li {
+    line-height: 33px;
+    float: left;
+    font-size: 12px;
+    -webkit-transform: scale(0.9);
+    text-align: center;
+    color: white;
+}
+
+.dvb-ul:nth-child(odd) {
+    /*background: #375faf;*/
+    background: rgba(0, 0, 0, 0.3);
+    /*opacity: 0.3;*/
+}
+
+.dvb-ul:nth-child(even) {
+    /*background: #7fb1fd;*/
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.dvb-ul li:nth-child(1) {
+    width: 64px;
+}
+
+.dvb-ul li:nth-child(2) {
+    width: 50px;
+}
+
+.dvb-ul li:nth-child(3) {
+    width: 49px;
+}
+
+.dvb-ul li:nth-child(4) {
+    width: 55px;
+}
+
+.dvb-ul li:nth-child(5) {
+    width: 47px;
+    border: none;
+}
+
+.epg-databox {
+    display: inline-block;
+    width: 272px;
+    height: 302px;
+    vertical-align: middle;
+    margin-top: 9px;
+}
+
+.epg-databox p {
+    background: #578ec7;
+    color: white;
+    line-height: 38px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+}
+
+.Triangle {
+    vertical-align: middle;
+    display: inline-block;
+    border-top: 5px solid #4a87c4;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 3px;
+}
+
+.ui-select-date {
+    width: 33.33%;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    text-align: center;
+    border-right: solid 1px #d2d2d2;
+    height: 33px;
+    float: left;
+    position: relative;
+}
+
+.ui-select-date span {
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    color: #4a87c4;
+    line-height: 33px;
+}
+
+.ui-select-date select {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 33px;
+    opacity: 0;
+    float: left;
+}
+
+.echarsPart {
+    margin-top: 33px;
+    background: white;
+}

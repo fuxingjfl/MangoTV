@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+        <title>ECharts</title>
+        
+</head>
+
+<body  id="layout" style="width:100%;height:100%;margin:0px; padding:0px;">
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom  overflow:hidden; ECharts单文件引入 <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>-->
+    <div id="main" style="height:100%;position:absolute;left:0px:right:0px;width:100%; margin:0px; padding:0px;"></div>
+    <script src="./echarts.min.js"></script>
+    <script type="text/javascript">
+    var data;
+    var status;
+    var legendData= [];
+    var data0 = []
+    var data1 = [];
+    var data2 = [];
+    var data3 = [];
+    var time = [];
+    var promptName;
+    var myChart = echarts.init(document.getElementById('main'));
+
+    function clearData(){
+       legendData= [];
+     data0 = []
+     data1 = [];
+     data2 = [];
+     data3 = [];
+     time = [];
+
+    }
+    function praseStr(jsonStr){
+	jsonStr = jsonStr.replace(/(?:\s*['"]*)?([a-zA-Z0-9]+)(?:['"]*\s*)?:/g, "\"$1\":");
+	//替换单引号
+	jsonStr = jsonStr.replace(/'/g, '"');
+	console.log(jsonStr);
+	var json = eval('('+ jsonStr + ')');
+	console.log(json);
+	return json;
+	}
+
+    function setSeriesData(data0) {
+
+        data=praseStr(data0) ;
+    }
+    function setLegend(name) {
+        legendData.push(name);
+    }
+    
+    function setData0(ocvalue) {
+        data0.push(ocvalue);
+    }
+    function setData1(ocvalue) {
+        data1.push(ocvalue);
+    }
+    function setData2(ocvalue) {
+        data2.push(ocvalue);
+    }
+    function setData3(ocvalue) {
+        data3.push(ocvalue);
+    }
+    
+    function setTime(timeStr) {
+        time.push(timeStr);
+       // alert(time);
+    }
+    function getWid(){
+       return (document.getElementById("main").style.width).toString();
+    }
+    function setName(name) {
+        promptName = name;
+    }
+
+    function setOption() {
+
+        window.setTimeout(function(){
+
+                           option = {
+                         title: {
+                                    text:'',
+                                    left:"right"
+                               },
+                           tooltip: {
+                           trigger: 'axis',
+                           textStyle: {
+                           fontSize: 10,
+                           },
+                           },
+                           legend: {
+                           show:false,
+                           data:legendData
+                           },
+                           grid: {
+                           top:'10',
+                          left: '10',
+                            right: '10',
+                           bottom: '10',
+                           containLabel: true
+                           },
+                           xAxis: {
+                           type: 'category',
+                           boundaryGap: false,
+                           axisLabel: {
+                           textStyle: {
+                           fontSize: 10
+                           }
+                           },
+                           data: time
+                           },
+                           yAxis: {
+                           name:"",
+                           type: 'value',
+                           axisLabel: {
+                           formatter: function (value) {
+                           return value
+                           },
+                           textStyle: {
+                           fontSize: 10
+                           }
+                           }
+
+                           },
+                           series:data
+
+
+                           };
+                            myChart.setOption(option);
+
+    },1000)
+
+    }
+        </script>
+</body>

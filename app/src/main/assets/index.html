@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+        <title>ECharts</title>
+        
+</head>
+
+<body id="layout" style="width:100%;height:100%;margin:0px; padding:0px;">
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:100%;position:absolute;left:0px:right:0px;width:100%; margin:0px; padding:0px;" ></div>
+    <!-- ECharts单文件引入 -->
+    <!--
+    <script type="text/javascript">-->
+    <script src="./echarts.min.js"></script>
+    <!--<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>-->
+    <script type="text/javascript">
+        
+    var data = [];
+    var time = [];
+    var promptName;
+    var status;
+    var myChart = echarts.init(document.getElementById('main'));
+    function setData(ocvalue) {
+        data.push(ocvalue);
+    }
+    
+    function setTime(timeStr) {
+        time.push(timeStr);
+    }
+    
+    function setName(name) {
+        promptName = name;
+    }
+    function setStatus(name) {
+        status = name;
+    }
+
+    function clearData(){
+     data = []
+     time = [];
+     promptName;
+    }
+
+    function setOption(){
+        window.setTimeout(function(){
+                                 option = {
+                                 tooltip: {
+                           trigger: 'axis',
+                           textStyle: {
+                           fontSize: 10,
+                           },
+                           },
+                                 grid: {
+                               top:'10',
+                              left: '10',
+                                right: '10',
+                               bottom: '10',
+                               containLabel: true
+                              },
+                               xAxis: {
+                                    type: 'category',
+                                    data: time
+                                },
+                                yAxis: {
+                                    type: 'value'
+                                },
+                                series: [{
+                                name:promptName,
+                                    data: data,
+                                    type: 'line'
+                                }]
+                                }
+                        myChart.setOption(option);
+                           }, 1000);
+    }
+        </script>
+</body>

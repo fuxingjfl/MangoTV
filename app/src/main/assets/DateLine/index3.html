@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="./echarts.min.js"></script>
+</head>
+
+<body style="height:100%; overflow:hidden; margin:0px; padding:0px; ">
+
+    <!-- <div class="echarsPart" > -->
+                    <div id="main" style="height:100%;position:absolute;width: 100%;"></div>
+                <!-- </div> -->
+</body>
+<!--<script>
+    var epgClose = document.getElementById('main')[0];
+    var epg = document.getElementsByClassName('epg')[0];
+    epgClose.onclick = function() {
+        epg.style.display = 'none'
+    }
+</script>-->
+<script src="./echarts.min.js"></script>
+<!--echarsPart-->
+<script type="text/javascript">
+
+var status;
+
+    var legendData= [];
+    var data0 = []
+    var data1 = [];
+    var data2 = [];
+    var data3 = [];
+        var data4 = [];
+    var time = [];
+    var promptName;
+    var myChart = echarts.init(document.getElementById('main'));
+    function clearData(){
+       legendData= [];
+     data0 = []
+     data1 = [];
+     data2 = [];
+     data3 = [];
+         var data4 = [];
+     time = [];
+     promptName;
+    }
+
+    function setLegend(name) {
+        legendData.push(name);
+    }
+
+    function setData0(ocvalue) {
+        data0.push(ocvalue);
+    }
+    function setData1(ocvalue) {
+        data1.push(ocvalue);
+    }
+    function setData2(ocvalue) {
+        data2.push(ocvalue);
+    }
+    function setData3(ocvalue) {
+        data3.push(ocvalue);
+    }
+    function setData4(ocvalue) {
+        data4.push(ocvalue);
+    }
+
+    function setTime(timeStr) {
+        time.push(timeStr);
+       // alert(time);
+    }
+    function getWid(){
+       return (document.getElementById("main").style.width).toString();
+    }
+    function setName(name) {
+        promptName = name;
+    }
+    function setOption(){
+
+        window.setTimeout(function(){
+
+                           option = {
+                         title: {
+                                    text:'',
+                               },
+                           tooltip: {
+                           trigger: 'axis',
+                           textStyle: {
+                           fontSize: 10,
+                           },
+                           },
+                           legend: {
+                           show:false,
+                           data:legendData
+                           },
+                           grid: {
+                           top:'10',
+                          left: '10',
+                            right: '10',
+                           bottom: '25',
+                           containLabel: true
+                           },
+                           xAxis: {
+                           type: 'category',
+                           boundaryGap: false,
+                           axisLabel: {
+                           textStyle: {
+                           fontSize: 10
+                           }
+                           },
+                           data: time
+                           },
+                        dataZoom: [{
+                            type: 'slider',
+                            show: true,
+                            realtime: true,
+                            start: 0,
+                            end: 85
+                        }
+                        ],
+
+
+                           yAxis: {
+                           name:"",
+                           type: 'value',
+                           axisLabel: {
+
+                           formatter: function (value) {
+                           return value
+                           },
+                           textStyle: {
+                           fontSize: 10
+                           }
+                           }
+
+                           },
+                           series: [
+                                    {
+                                    name:legendData[0],
+                                    type:'line',
+                                    data:data0,
+                                    itemStyle : {
+                                    normal : {
+                                    lineStyle:{
+                                    width:2,
+                                    }
+                                    }
+                                    }
+                                    },
+                                    {
+                                    name:legendData[1],
+                                    type:'line',
+                                    data:data1,
+                                    itemStyle : {
+                                    normal : {
+                                    lineStyle:{
+                                    width:2,
+                                    }
+                                    }
+                                    }
+                                    }
+                                    ,
+                                    {
+                                    name:legendData[2],
+                                    type:'line',
+                                    data:data2,
+                                    itemStyle : {
+                                    normal : {
+                                    lineStyle:{
+                                    width:2,
+                                    }
+                                    }
+                                    }
+                                    },
+                                    {
+                                    name:legendData[3],
+                                    type:'line',
+                                    data:data3,
+                                    itemStyle : {
+                                    normal : {
+                                    lineStyle:{
+                                    width:2,
+                                    }
+                                    }
+                                    }
+                                    },
+                                    {
+                                    name:legendData[4],
+                                    type:'line',
+                                    data:data4,
+                                    itemStyle : {
+                                    normal : {
+                                    lineStyle:{
+                                    width:2,
+                                    }
+                                    }
+                                    }
+                                    }
+                                    ]
+                           };
+                            myChart.setOption(option);
+
+        },1000)
+
+     }
+
+</script>
+
+</html>
